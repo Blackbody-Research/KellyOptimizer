@@ -4,7 +4,7 @@ module KellyOptimizer
 
 #also provides helper functions to generate and merge price series for calculating statistics
 
-using JuMP, HiGHS, LinearAlgebra, Statistics, StatsBase, DataFrames
+using JuMP, HiGHS
 
 #helper function to add a constraint to the optimization based on the absolute value sum of a vector
 function sumAbs(model, expr::Vector)
